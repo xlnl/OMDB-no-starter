@@ -4,7 +4,8 @@ We'll be creating an app that connects to [OMDB](http://www.omdbapi.com), a publ
 
 ## Getting Started
 
-* Create a new express/ejs/ejs layouts project called `omdb-api-practice`
+* Fork and clone this repo
+* Make it a Node app set up with express/ejs/express-ejs-layouts
 
 # Part 1: Search
 
