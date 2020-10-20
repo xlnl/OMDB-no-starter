@@ -16,8 +16,8 @@ We'll be creating an app that connects to [OMDB](http://www.omdbapi.com), a publ
 
 ## Requirements
 1. On your home page, create a form. The form will ask for the user to input a movie title.
-  * This form should have a `GET` method, with an action of `/results`
-  * Example result of submitting the form: sends browser to `/results?q=star+wars`
+  * This form should have a `GET` method, with an action of `/movies`
+  * Example result of submitting the form: sends browser to `/movies?q=star+wars`
   * HINT: What should you name your input field based on the query string above?
 2. Write your GET route for `/movies`.
   * Use `req.query` to access query string parameters.
