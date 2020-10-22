@@ -8,11 +8,10 @@ Make a list of all the routes you'll need for this app along with their CRUD fun
 
 VERB | URL                           | Action (CRUD)    | Description
 ---------------------------------------------------------------------------------------------
-GET  |  /movies                      | Index (Read)     | shows a form to input search query for movie title
+GET  |  /                            | Index (Read)     | shows a form to input search query for movie title
 GET  |  /movies                      | Show (Read)      | displays the movie results based on the search query
-POST |  /movies/faves                | Create (Create)  | receives the movie data contained in the form field
 GET  |  /movies/:movie_id            | Show (Read)      | shows the selected movie result and detailed info about the movie
-PUT  |  /movies/:movie_id            | Update (Update)  | updates the data for a specific movie to store in fave array
-
+POST |  /movies/faves                | Create (Create)  | receives the movie data contained in the form field
+GET  |  /movies/faves                | Show (Read)      | displays the fave movie results based on the form results
 
 Once you're done, get started on the skeleton of the app. Hold off on the API and Database stuff
