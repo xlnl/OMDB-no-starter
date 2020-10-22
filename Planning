@@ -1,0 +1,18 @@
+Look at the user stories sections of Part 1 and Part 2 to get a mental image of what the app will do/be
+    User Stories
+    As a user, I want to go to a home page to search a database full of movies.
+    As a user, I want to see movie results based on my search query.
+    As a user, I want to pick a movie result and see detailed information about the movie.
+
+Make a list of all the routes you'll need for this app along with their CRUD functionality and HTTP verbs (see the tables from RESTful Creatures for an example) [HINT: there will be 5 routes total]
+
+VERB | URL                           | Action (CRUD)    | Description
+---------------------------------------------------------------------------------------------
+GET  |  /movies                      | Index (Read)     | shows a form to input search query for movie title
+GET  |  /movies                      | Show (Read)      | displays the movie results based on the search query
+POST |  /movies/faves                | Create (Create)  | receives the movie data contained in the form field
+GET  |  /movies/:movie_id            | Show (Read)      | shows the selected movie result and detailed info about the movie
+PUT  |  /movies/:movie_id            | Update (Update)  | updates the data for a specific movie to store in fave array
+
+
+Once you're done, get started on the skeleton of the app. Hold off on the API and Database stuff

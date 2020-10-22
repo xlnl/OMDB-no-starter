@@ -1,0 +1,16 @@
+<h1>OMDB Movie Database</h1>
+<h2>Find your movie below!</h2>
+
+<form action="/movies" method="GET"> 
+    <!-- action: link is where the input/data will be entered to  -->
+    <label for="movieTitle">Movie Title</label>
+    <input type="text" name="q" id="movieTitle">
+    <input type="submit">
+</form>
+
+<!-- 
+In a form, the METHOD attribute and the ACTION attribute 
+tell the app WHICH route to send the form data to once the 
+form has been submitted. 
+METHOD <==> the HTTP verb (GET OR POST) 
+ACTION<==>the URL pattern for the route that we've written to deal with the form data (aka payload) -->

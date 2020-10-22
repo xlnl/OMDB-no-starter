@@ -1,0 +1,27 @@
+{
+  "name": "OMDB-no-starter",
+  "version": "1.0.0",
+  "description": "We'll be creating an app that connects to [OMDB](http://www.omdbapi.com), a public movie API. You will need a key. Go to the site to register for a free one. Keep API keys out of public repos! You don't need to get a new key if you already have one from the lesson.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xlnl/OMDB-no-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xlnl/OMDB-no-starter/issues"
+  },
+  "homepage": "https://github.com/xlnl/OMDB-no-starter#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0"
+  }
+}

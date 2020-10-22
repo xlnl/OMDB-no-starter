@@ -1,0 +1,12 @@
+<h1>Here are your movie results:</h1>
+
+<% movies.forEach((movie) => { %>
+    <ul>
+        <li>
+            <a href="movies/<%= movie.imdbID %>">
+            <%= movie.Title %>
+            <img src="<%= movie.Poster %>">
+            </a>
+        </li>
+    </ul>
+<% }); %>
