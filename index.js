@@ -62,7 +62,7 @@ app.get("/movies/:movie_id", (req, res) => {
 });
 
 // FAVES ROUTES > favorites.ejs
-// app.get
+// app.get to get all the faves from database
 app.get("/faves", (req, res) => {
     db.fave.findAll()
     .then((favorite) => {
@@ -73,8 +73,10 @@ app.get("/faves", (req, res) => {
 // app.post > redirect to /favorites
 app.post("/faves", (req, res) => {
     console.log("Form Data:", req.body)
-    db.fave.create(req.body)
-    .then((createdFave) => {
+    db.fave.findOrCreate({
+        where: {title: req.body.title},
+        defaults: {imdbid: req.body.imdbid}
+    }).then(([createdFave, wasCreated]) => {
         console.log("Fave Movie Created:", createdFave);
         res.redirect("faves");
     }).catch(err => {
