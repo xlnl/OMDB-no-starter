@@ -1,0 +1,8 @@
+<h1>Your Saved Favorites</h1>
+<ul>
+    <% favorites.forEach((favorite) => { %>
+        <li>
+            <a href="movies/<%= favorite.imdbid %>"><%= favorite.title %></a>
+        </li>
+    <% }); %>
+</ul>

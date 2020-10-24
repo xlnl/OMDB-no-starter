@@ -11,7 +11,7 @@ VERB | URL                           | Action (CRUD)    | Description
 GET  |  /                            | Index (Read)     | shows a form to input search query for movie title
 GET  |  /movies                      | Show (Read)      | displays the movie results based on the search query
 GET  |  /movies/:movie_id            | Show (Read)      | shows the selected movie result and detailed info about the movie
-POST |  /movies/faves                | Create (Create)  | receives the movie data contained in the form field
+POST |  /movies/faves                | Create (Create)  | creates a fave movie with the POST payload data
 GET  |  /movies/faves                | Show (Read)      | displays the fave movie results based on the form results
 
 Once you're done, get started on the skeleton of the app. Hold off on the API and Database stuff

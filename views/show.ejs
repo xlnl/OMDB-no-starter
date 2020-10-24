@@ -1,13 +1,22 @@
 <h1>Here are the details to your selected movie:</h1>
 
-<h2><%= movie.Title %></h2>
-<h3> Release Year: <%= movie.Year %></h3>
-<img src="<%= movie.Poster %>">
-<br>
-<h3> Rated: <%= movie.Rated %></h3>
-<h4> Genre(s): <%= movie.Genre %></h3>
-<h4> Director(s): <%= movie.Director %></h3>
-<h4> Actors(s): <%= movie.Actors %></h3>
-<h4> Writer(s): <%= movie.Writer %></h3>
-<p> Ratings: <%= movie.imdbRating %></p>
-<p> Plot: <%= movie.Plot %></p>
+<div>
+    <h2><%= movie.Title %></h2>
+    <h3> Release Year: <%= movie.Year %></h3>
+    <img src="<%= movie.Poster %>">
+    <br>
+    <h3> Rated: <%= movie.Rated %></h3>
+    <h4> Genre(s): <%= movie.Genre %></h3>
+    <p> Director(s): <%= movie.Director %></p>
+    <p> Actors(s): <%= movie.Actors %></p>
+    <p> Writer(s): <%= movie.Writer %></p>
+    <p> imdb Ratings: <%= movie.imdbRating %> | Rotten Tomato Rating: <%= movie.Ratings[1].Value %></p>
+    <p> Plot: <%= movie.Plot %></p>
+    <p> Awards: <%= movie.Awards %></p>
+</div>
+
+<form method="POST" action="/faves">
+    <input type="hidden" name="title" value="<%= movie.Title %>"/>
+    <input type="hidden" name="imdbid" value="<%= movie.imdbID %>"/>
+    <button type="submit">Add to Favorites</button>
+</form>
